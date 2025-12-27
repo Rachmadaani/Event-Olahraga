@@ -1,111 +1,20 @@
-🏆 Event Olahraga – Sistem Manajemen Event Olahraga
-Sebuah aplikasi berbasis web untuk mengelola event olahraga secara online, mulai dari pendaftaran peserta, penjadwalan, hingga hasil pertandingan.
+<h1 align="center">Hi 👋, I'm Event Olahraga</h1>
+<h3 align="center">A passionate frontend developer from Indonesia</h3>
 
-📦 Fitur Utama
-✅ Pendaftaran peserta online
-✅ Penjadwalan event & pertandingan
-✅ Manajemen kategori olahraga
-✅ Dashboard admin & peserta
-✅ Sertifikat digital peserta
+- 🔭 I’m currently working on [Event Olahraga](https://github.com/Rachmadaani/Event-Olahraga.git)
 
-🚀 Cara Mulai (Untuk Pemula)
-# Clone Repository
-bash
-git clone https://github.com/Rachmadaani/Event-Olahraga.git
-cd Event-Olahraga
+- 👯 I’m looking to collaborate on [Event Olahraga](https://github.com/Rachmadaani/Event-Olahraga.git)
 
-# Install composer (jika belum ada)
-command : composer install
-command : composer update
+- 👨‍💻 All of my projects are available at [https://github.com/Rachmadaani](https://github.com/Rachmadaani)
 
-# Install npm packages
-command : npm install
+- 💬 Ask me about **PHP, Codeigniter, Laravel**
 
-# Setup Environment
-bash
-# Salin file environment
-command : copy .env.example .env
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
 
-# Generate key aplikasi
-command : php artisan key:generate
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://codeigniter.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
-# Setup Database
-Buat database baru di MySQL/PostgreSQL
-
-Update file .env dengan kredensial database:
-env
-DB_CONNECTION=mysql,
-DB_HOST=127.0.0.1,
-DB_PORT=3306,
-DB_DATABASE=nama_database_anda,
-DB_USERNAME=username_anda,
-DB_PASSWORD=password_anda.
-
-Jalankan migrasi database:
-
-bash
-php artisan migrate
-
-# Generate asset frontend
-command : npm run dev
-
-# Jalankan server Codeigniter
-command : php artisan serve
-Buka browser dan akses: http://localhost:8000
-
-📁 Struktur Proyek
-text
-Event-Olahraga/
-app/              # Logic aplikasi (Models, Controllers),
-database/         # Migrations, seeders,
-resources/        # Views, assets, bahasa,
-public/           # Asset publik (CSS, JS, images),
-routes/           # Definisi rute web/API,
-tests/            # Unit & feature tests.
-
-👨‍💻 Default Login
-Superadmin
-Username: superadmin
-Password: superadmin123
-
-Admin
-Username: admin@gmail.com
-Password: password
-
-Peserta
-Username: rudi@gmail.com
-Password: Rudi123
-
-#Ganti password default setelah login pertama!#
-
-🔧 Teknologi yang Digunakan
-Backend: Codeigniter 4
-Frontend: Bootstrap 5, JavaScript
-Database: MySQL/PostgreSQL
-Authentication: Auth CI
-
-🧪 Testing
-bash
-# Jalankan unit test
-command : php artisan test
-
-# Jalankan test dengan coverage
-php artisan test --coverage
-🤝 Kontribusi
-Fork repository ini
-
-Buat branch baru (git checkout -b fitur-baru)
-
-Commit perubahan (git commit -m 'Menambah fitur X')
-
-Push ke branch (git push origin fitur-baru)
-
-Buat Pull Request
-
-📄 Lisensi
-Proyek ini dilisensikan di bawah MIT License.
-
-📞 Kontak & Dukungan
-Developer: Rachmadaani
-
-Repository: https://github.com/Rachmadaani/Event-Olahraga
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/https://saweria.co/Rachmadaani"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://saweria.co/Rachmadaani" /></a><a href="https://ko-fi.com/https://saweria.co/Rachmadaani"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://saweria.co/Rachmadaani" /></a></p><br><br>
