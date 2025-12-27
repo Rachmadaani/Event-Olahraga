@@ -1,68 +1,111 @@
-# CodeIgniter 4 Application Starter
+🏆 Event Olahraga – Sistem Manajemen Event Olahraga
+Sebuah aplikasi berbasis web untuk mengelola event olahraga secara online, mulai dari pendaftaran peserta, penjadwalan, hingga hasil pertandingan.
 
-## What is CodeIgniter?
+📦 Fitur Utama
+✅ Pendaftaran peserta online
+✅ Penjadwalan event & pertandingan
+✅ Manajemen kategori olahraga
+✅ Dashboard admin & peserta
+✅ Sertifikat digital peserta
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+🚀 Cara Mulai (Untuk Pemula)
+# Clone Repository
+bash
+git clone https://github.com/Rachmadaani/Event-Olahraga.git
+cd Event-Olahraga
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+# Install composer (jika belum ada)
+command : composer install
+command : composer update
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+# Install npm packages
+command : npm install
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+# Setup Environment
+bash
+# Salin file environment
+command : copy .env.example .env
 
-## Installation & updates
+# Generate key aplikasi
+command : php artisan key:generate
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+# Setup Database
+Buat database baru di MySQL/PostgreSQL
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+Update file .env dengan kredensial database:
+env
+DB_CONNECTION=mysql,
+DB_HOST=127.0.0.1,
+DB_PORT=3306,
+DB_DATABASE=nama_database_anda,
+DB_USERNAME=username_anda,
+DB_PASSWORD=password_anda.
 
-## Setup
+Jalankan migrasi database:
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+bash
+php artisan migrate
 
-## Important Change with index.php
+# Generate asset frontend
+command : npm run dev
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+# Jalankan server Codeigniter
+command : php artisan serve
+Buka browser dan akses: http://localhost:8000
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+📁 Struktur Proyek
+text
+Event-Olahraga/
+app/              # Logic aplikasi (Models, Controllers),
+database/         # Migrations, seeders,
+resources/        # Views, assets, bahasa,
+public/           # Asset publik (CSS, JS, images),
+routes/           # Definisi rute web/API,
+tests/            # Unit & feature tests.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+👨‍💻 Default Login
+Superadmin
+Username: superadmin
+Password: superadmin123
 
-## Repository Management
+Admin
+Username: admin@gmail.com
+Password: password
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+Peserta
+Username: rudi@gmail.com
+Password: Rudi123
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+#Ganti password default setelah login pertama!#
 
-## Server Requirements
+🔧 Teknologi yang Digunakan
+Backend: Codeigniter 4
+Frontend: Bootstrap 5, JavaScript
+Database: MySQL/PostgreSQL
+Authentication: Auth CI
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+🧪 Testing
+bash
+# Jalankan unit test
+command : php artisan test
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+# Jalankan test dengan coverage
+php artisan test --coverage
+🤝 Kontribusi
+Fork repository ini
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+Buat branch baru (git checkout -b fitur-baru)
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Commit perubahan (git commit -m 'Menambah fitur X')
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Push ke branch (git push origin fitur-baru)
+
+Buat Pull Request
+
+📄 Lisensi
+Proyek ini dilisensikan di bawah MIT License.
+
+📞 Kontak & Dukungan
+Developer: Rachmadaani
+
+Repository: https://github.com/Rachmadaani/Event-Olahraga
