@@ -1,0 +1,23 @@
+ink Login : http://localhost:8080/login
+
+Super Admin
+
+username : superadmin
+password : superadmin123
+
+Admin
+
+Admin Adidas
+username : Adminadidas
+password : Adminadidas
+
+Admin Nike
+username : Admin Nike
+password : Adminnike
+
+User 
+username : Rachmadaani
+password : Dani123
+
+usernam : Rudi
+password : Rudi123
